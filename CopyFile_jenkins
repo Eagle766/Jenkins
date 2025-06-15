@@ -1,7 +1,7 @@
 pipeline{
   agent any
  parameters{
-    string(name: 'source', defaultValue:"MyStr", description:'Source Path')
+    string(name: 'source', defaultValue:"MyStr", description:'Source Path'),
     string(name: 'destination', defaultValue:"MyStr", description:'Destination Path')
 
 }

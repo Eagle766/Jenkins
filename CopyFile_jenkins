@@ -5,6 +5,12 @@ pipeline{
     string(name: 'destination', defaultValue:"MyStr", description:'Destination Path')
 
 }
+stage('Checkout') {
+    steps {
+        checkout scm
+    }
+}
+
     stages{
         stage('CopyFile'){
            steps{

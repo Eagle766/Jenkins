@@ -5,9 +5,7 @@ pipeline{
     string(name: 'destination', defaultValue:"MyStr", description:'Destination Path')
 
 }
-
-
-    stages{
+ stages{
   stage('Checkout') {
     steps {
         checkout scm

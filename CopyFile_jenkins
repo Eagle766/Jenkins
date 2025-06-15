@@ -14,7 +14,7 @@ pipeline{
         stage('CopyFile'){
            steps{
 
-             powershell './CopyFile.ps1'
+             powershell "./CopyFile.ps1 -SourcePath '${params.source}'  -DestinationPath '${params.destination}' " 
 
 }
 }

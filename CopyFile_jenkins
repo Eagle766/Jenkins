@@ -1,6 +1,6 @@
 pipeline{
   agent any
- parameter{
+ parameters{
     string(name: 'source', default:"MyStr", description:'Source Path')
     string(name: 'destination', default:"MyStr", description:'Destination Path')
 

@@ -4,7 +4,7 @@ pipeline{
         stage('CopyFile'){
            steps{
 
-             bat 'Echo Copy'
+             powershell './CopyFile.ps1'
 
 }
 }

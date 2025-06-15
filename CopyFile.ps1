@@ -1,3 +1,9 @@
+param (
+    [string]$SourcePath,
+    [string]$DestinationPath
+    
+)
+
 function Copy-File {
     param (
         [Parameter(Mandatory=$true)]
@@ -20,5 +26,5 @@ function Copy-File {
     }
 }
 
-Copy-File -SourcePath "F:\File1" -DestinationPath "F:\File2"
+Copy-File -SourcePath $SourcePath -DestinationPath $DestinationPath
 
